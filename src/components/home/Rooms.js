@@ -29,18 +29,13 @@ const RoomsCenter = styled.div`
   margin: 0 auto;
   
   ${media.tablet`
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grip-column-gap:${setRem(32)}
+    width: 100vw:
+    max-width: 1170px
   `}
   
-  ${media.desktop`
-    width: 100vw;
-    max-width: 1170px;
-  `}
-  
-  ${media.large`
-    grid-template-columns: repeat(3, 1fr);
-  `}
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-column-gap: ${setRem(45)};
+
 `
 

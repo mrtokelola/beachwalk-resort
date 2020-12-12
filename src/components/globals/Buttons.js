@@ -25,4 +25,5 @@ export const PrimaryBtn = styled.button`
 
 export const SmallBtn = styled(PrimaryBtn)`
   padding: ${setRem(9)} ${setRem(12)};
+  margin: 1rem;
 `
